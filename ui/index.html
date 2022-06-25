@@ -308,7 +308,7 @@ document.body.appendChild(el);
   <details open>
   <summary>
   <h2>On device</h2>
-  <button value="List Files" id="refreshFilesList" class="notext button icon" title="Refresh device file list" onclick="Files.listFiles();" /></button>
+  <button value="List Files" id="refreshFilesList" class="notext button icon" title="Refresh device file list" onclick="Tool.stopPython(); Files.listFiles();" /></button>
   </summary>
   <span id='fileList'>...</span>
   </details>

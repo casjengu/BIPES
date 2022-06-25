@@ -237,6 +237,8 @@ class websocket {
               if (Tool.decode_resp(data) == 0) {
                 files.update_file_status('Sent ' + Files.put_file_name + ', ' + Files.put_file_data.length + ' bytes');
                 Files.listFiles();
+                Tool.stopPython();
+                Tool.softReset();
               } else {
                 files.update_file_status('Failed sending ' + Files.put_file_name);
               }
